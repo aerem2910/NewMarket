@@ -21,7 +21,7 @@ namespace StoreMarket.Contexts
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             
-            tionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=StoreDB;TrustServerCertificate=True;");
+            optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=StoreDB;TrustServerCertificate=True;");
 
          
             base.OnConfiguring(optionsBuilder);
