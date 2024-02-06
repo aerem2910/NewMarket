@@ -49,7 +49,7 @@ namespace StoreMarket
             .Build();
 
             builder.Services.AddDbContext<StoreContext>(options =>
-            options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+            options.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=StoreDB;TrustServerCertificate=True;");
 
 
             app.UseAuthorization();
