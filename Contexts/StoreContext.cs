@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using StoreMarket.Models;
 
@@ -20,8 +20,8 @@ namespace StoreMarket.Contexts
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            
-            optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=StoreDB;TrustServerCertificate=True;");
+
+            optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=mySqlDatabase;TrustServerCertificate=True;"); 
 
          
             base.OnConfiguring(optionsBuilder);
